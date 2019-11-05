@@ -1,0 +1,112 @@
+::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+.root__container {
+  height: 100%;
+  position: relative;
+  min-height: 100%;
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "navbar mainview" "footer footer";
+}
+
+.root__navbar,
+.root__mainview {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+
+.root__mainview {
+  width: 100%;
+  grid-area: mainview;
+}
+
+.root__footer {
+  width: 100%;
+  grid-area: footer;
+  background-color: #181818;
+}
+
+.root__navbar {
+  grid-area: navbar;
+  overflow-y: auto;
+  will-change: transform;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 220px;
+}
+
+.navBar,
+.navBarHeader {
+  display: flex;
+  -webkit-box-direction: normal;
+}
+
+.navBar {
+  padding: 24px;
+  flex: 1;
+  cursor: default;
+  user-select: none;
+}
+
+.navBar__Item {
+  padding: 16px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mainviewContainer {
+  flex: 1;
+  -webkit-box-flex: 0;
+  min-height: 0;
+}
+
+.mainviewContainer__scrollnode {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.mainContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  -webkit-box-pack: start;
+  -webkit-box-orient: horizontal;
+}
+
+.mainContainer__Item {
+  width: 200px;
+  height: 230px;
+}
+
+.mainContainer__Item img {
+  width: 200px;
+  height: 200px;
+}
+
+.row {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.spacingContent {
+  margin: 0 auto;
+  padding: 0 32px;
+  max-width: 1480px;
+}
+
+.fluidContainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
