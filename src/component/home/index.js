@@ -1,25 +1,38 @@
 import React from 'react';
-
-const homeContainer = {
-  width: "90%",
-  height: "90%"
-};
-
-const imgSize = {
-  width: "100%",
-  height: "100%",
-  margin: 20
-}
+import styles from '../../module/styles.module.css';
+import {Link} from 'react-router-dom';
 
 const Home = () => (
-  <div className={homeContainer}>
-    <a href="/">
-    <img 
-    className={imgSize} 
-    src="https://image.freepik.com/free-vector/promotion-fashion-banner_1188-161.jpg" 
-    alt=""
-    />
-    </a>
+  <div className={styles.root__AdsContainer}>
+    <div className={styles.root__sale}>
+      <Link to="/sale">
+        <img
+          src="https://image.freepik.com/free-vector/promotion-fashion-banner_1188-161.jpg"
+          alt=""
+        />
+      </Link>
+    </div>
+
+    <div className={styles.root__feature}>
+      <div className={styles.root__hot}>
+        <Link to="/hot">
+          <img
+            src="https://image.freepik.com/free-vector/promotion-fashion-banner_1188-161.jpg"
+            alt=""
+          />
+        </Link>
+      </div>
+
+      <div className={styles.root__new}>
+        <a href="/">
+          <img
+            src="https://image.freepik.com/free-vector/promotion-fashion-banner_1188-161.jpg"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+
   </div>
 );
 

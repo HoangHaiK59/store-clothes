@@ -10,7 +10,8 @@ var datas = [
     },
     content: "",
     cost: "",
-    category: "T-Shirt"
+    category: "T-Shirt",
+    status: "hot"
   },
   {
     id: 2,
@@ -23,7 +24,8 @@ var datas = [
     },
     content: "",
     cost: "",
-    category: "Dress"
+    category: "Dress",
+    status: "hot",
   },
   {
     id: 3,
@@ -36,7 +38,8 @@ var datas = [
     },
     content: "",
     cost: "",
-    category: "Shirt"
+    category: "Shirt",
+    status: "new"
   },
   {
     id: 4,
@@ -49,7 +52,8 @@ var datas = [
     },
     content: "",
     cost: "",
-    category: "Jacket"
+    category: "Jacket",
+    status: "new"
   },
   {
     id: 5,
@@ -62,7 +66,8 @@ var datas = [
     },
     content: "",
     cost: "",
-    category: "Accessories"
+    category: "Accessories",
+    status: "new"
   },
   {
     id: 6,
@@ -75,7 +80,8 @@ var datas = [
     },
     content: "",
     cost: "",
-    category: "Sale"
+    category: "Sale",
+    status: "hot"
   }
 ];
 

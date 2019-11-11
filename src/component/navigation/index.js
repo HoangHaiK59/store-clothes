@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../module/styles.module.css';
+import Menu from '../menu';
 
 class Navigation extends React.Component {
   constructor(props){
@@ -40,9 +41,7 @@ class Navigation extends React.Component {
   render() {
     return(
       <div ref={this.toggleNav} className={styles.root__navbar}>
-        <div className={styles.navBar}>
-
-        </div>
+        <Menu/>
       </div>
     );
   }
